@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Intelligent Bistro",
+    "slug": "intelligent-bistro",
+    "scheme": "brgr",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-audio"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Penny uses your voice to take your order.",
+        "NSMicrophoneUsageDescription": "Penny needs the mic to hear your order."
+      },
+      "bundleIdentifier": "com.anonymous.intelligent-bistro"
+    },
+    "android": {
+      "usesCleartextTraffic": true,
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
